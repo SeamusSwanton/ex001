@@ -9,8 +9,18 @@ public class UnitCircle implements Comparable {
 	}
 
 	public int compareTo(Object o) {
-		return radius;
+		int x = (int) o;
+		if (x == radius) {
+			return 0;
+		}
+		else if (x > radius) {
+			return 1;
+		}
+		else {
+			return -1;
+		}
 	}
+
 	
 	
 }
