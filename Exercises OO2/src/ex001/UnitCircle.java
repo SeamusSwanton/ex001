@@ -9,7 +9,7 @@ public class UnitCircle implements Comparable {
 	}
 
 	public int compareTo(Object o) {
-		int x = new int(o);
+		return radius;
 	}
 	
 	
