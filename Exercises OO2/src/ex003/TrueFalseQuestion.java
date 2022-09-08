@@ -23,6 +23,26 @@ package ex003;
 
 public class TrueFalseQuestion
 {
+
+	public void setText(String string) {
+		// TODO Auto-generated method stub
+		
+	}
 // TODO: as a starting point, override the appropriate method(s) to present the question as specified
+
+	public void setAnswer(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Object checkAnswer(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void display() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

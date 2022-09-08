@@ -1,14 +1,12 @@
 package ex002;
 
-public class GeometricSolid {
+public interface GeometricSolid{
 
-	public double getVolume() {
+
+	public double getVolume();
 		
-		return 0;
-	}
 
-	public double getSurfaceArea() {
-		return 0;
-	}
+	public double getSurfaceArea();
 
+	
 }

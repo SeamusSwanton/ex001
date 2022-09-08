@@ -1,3 +1,4 @@
+
 package ex002;
 
 import junit.framework.TestCase;
@@ -19,6 +20,4 @@ public class GeometricSolidTest extends TestCase implements GeometricSolid
 	   //dummy test... as long as this test compiles, the interface is written correctly
        assertEquals(true,true);
    }
-	
-
 }
