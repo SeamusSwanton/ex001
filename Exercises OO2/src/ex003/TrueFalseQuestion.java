@@ -23,26 +23,64 @@ package ex003;
 
 public class TrueFalseQuestion
 {
+    private String text;
+    private String answer;
 
-	public void setText(String string) {
-		// TODO Auto-generated method stub
-		
-	}
-// TODO: as a starting point, override the appropriate method(s) to present the question as specified
+    /**
+       Constructs a question with empty question and answer.
+    */
+    public TrueFalseQuestion()
+    {
+        text = "";
+        answer = "";
+    }
 
-	public void setAnswer(String string) {
-		// TODO Auto-generated method stub
-		
-	}
+    /**
+       Sets the question text.
+       @param questionText the text of this question
+    */
+    public void setText(String questionText)
+    {
+        text = questionText;
+    }
 
-	public Object checkAnswer(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    /**
+       Sets the answer for this question.
+       @param correctResponse the answer
+    */
+    public void setAnswer(String correctResponse)
+    {
+    	
+    	correctResponse = correctResponse.toLowerCase();
+        answer = correctResponse;
+    }
 
-	public void display() {
-		// TODO Auto-generated method stub
-		
-	}
+    /**
+       Checks a given response for correctness.
+       @param response the response to check
+       @return true if the response was correct, false otherwise
+    */
+    public boolean checkAnswer(String response)
+    {
+    	if(response.equals("t") || response.equals("T")
+        ||response.equals("f") ||response.equals("F")){
+    		if(response.equals("t") || response.equals("T")) {
+    			response = "true";
+    		}
+    		else {
+    			response = "false";
+    		}
+        	}
+    	response = response.toLowerCase();
+        return response.equals(answer);
+    }
 
+    /**
+       Displays this question.
+    */
+    public void display()
+    {
+        System.out.println("Answer True or False: " + text);
+    }
 }
+
