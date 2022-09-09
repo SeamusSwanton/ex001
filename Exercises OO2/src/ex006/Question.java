@@ -1,6 +1,4 @@
 package ex006;
-// This is provided for reference. You cannot modify this file!
-
 /**
    A question with a text and an answer.
 */
@@ -9,45 +7,48 @@ public class Question
     private String text;
     private String answer;
 
+    /**
+       Constructs a question with empty question and answer.
+    */
     public Question()
     {
         text = "";
         answer = "";
     }
 
-    //accessors
-    public String getText()
-	{
-	 	return text;
-	}
-    
-    public String getAnswer() {
-    	return answer;
-    }
-
-    public boolean checkAnswer(String response)
-    {
-        return response.equals(answer);
-    }
-	    
-    //mutators
-    public final void setText(String questionText)
+    /**
+       Sets the question text.
+       @param questionText the text of this question
+    */
+    public void setText(String questionText)
     {
         text = questionText;
     }
 
-    public final void setAnswer(String correctResponse)
+    /**
+       Sets the answer for this question.
+       @param correctResponse the answer
+    */
+    public void setAnswer(String correctResponse)
     {
         answer = correctResponse;
     }
 
-    
-	//This method is here to ensure that that the superclass's instance variables are being used instead of
-    //instance variables in subclasses. You would not want to have different answers at different layers of 
-    //your hierarchy.
-    public final void validation(String code) {
-    	this.text = code;
-    	this.answer = code;
+    /**
+       Checks a given response for correctness.
+       @param response the response to check
+       @return true if the response was correct, false otherwise
+    */
+    public boolean checkAnswer(String response)
+    {
+        return response.equals(answer);
     }
 
+    /**
+       Displays this question.
+    */
+    public void display()
+    {
+        System.out.println(text);
+    }
 }

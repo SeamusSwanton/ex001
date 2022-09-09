@@ -1,4 +1,4 @@
-package ex003;
+package ex006;
 
 //You are going to add a true/false type question to the question heirachy. Call it
 //TrueFalseQuestion

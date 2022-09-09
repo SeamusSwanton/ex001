@@ -3,7 +3,7 @@ package ex004;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-import ex003.Trio;
+import ex006.Trio;
 
 public class ExtensionTest {
 

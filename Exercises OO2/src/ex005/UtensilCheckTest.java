@@ -3,13 +3,13 @@ package ex005;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-import ex003.Drink;
-import ex003.Salad;
-import ex003.Sandwich;
-import ex003.Trio;
 import ex004.Cappuccino;
 import ex004.ClubSandwich;
 import ex004.SpinachSalad;
+import ex006.Drink;
+import ex006.Salad;
+import ex006.Sandwich;
+import ex006.Trio;
 
 public class UtensilCheckTest {
 
