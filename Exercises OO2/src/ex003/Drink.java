@@ -2,8 +2,8 @@ package ex003;
 
 public class Drink implements MenuItem{
 
-	private String name;
-	private double price;
+	private  String name;
+	protected  double price;
 
 	public Drink(String name, double price) {
 		this.name = name;

@@ -1,4 +1,9 @@
 package ex003;
+
+import ex004.Cappuccino;
+import ex004.ClubSandwich;
+import ex004.SpinachSalad;
+
 //sandwich, salad, and drink,
 public class Trio implements MenuItem{
 	
@@ -11,6 +16,7 @@ public class Trio implements MenuItem{
 		this.Salad = Salad;
 		this.Drink = Drink;
 	}
+	
 	public String getName() {
 
 		return (sandwich.getName() + "/" + Salad.getName() + "/" + Drink.getName() + " Trio");
@@ -18,8 +24,19 @@ public class Trio implements MenuItem{
 
 
 	public double getPrice() {
-
-		return 0;
+		double x = sandwich.getPrice() + Salad.getPrice()  + Drink.getPrice();
+		double y;
+		if (sandwich.getPrice() < Salad.getPrice() && sandwich.getPrice() < Drink.getPrice()) {
+			y = sandwich.getPrice();
+		}
+		else if(Salad.getPrice() < Drink.getPrice()) {
+			y = Salad.getPrice();
+		}
+		else {
+			y = Drink.getPrice();
+		}	
+		double z = x-y; 
+		return z;
 	}
 
 }
